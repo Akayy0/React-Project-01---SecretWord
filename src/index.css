@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Estilização referente ao index html */
+html, body{
+    height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    font-family: Ubuntu;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(140deg, rgb(247, 233, 233), rgb(90, 0, 0));
+    color: rgb(90, 0, 0);
+}
+
+button{
+    
+    background-color: rgb(70, 0, 0);
+    color: rgb(247, 233, 233);
+    padding: 3px 25px;
+    border: 0px solid rgb(37, 37, 37);
+    border-radius: 20px;
+    height: 40px;
+    font-weight:bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition:0.7s ease-in-out;
+}
+
+button:hover{
+    background-color:rgb(247, 233, 233);
+    color: rgb(70, 0, 0);
 }
