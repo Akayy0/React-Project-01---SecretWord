@@ -1,11 +1,16 @@
 import "./StartScreen.css";
+import logo from "../components/assets/SWlogo.png"
 
-const StartScreen = () => {
+const StartScreen = ({startGame}) => {
   return (
     <div className="start">
-        <h1>Secret Word</h1>
-        
-        <button>Começar</button>
+
+      <div className="logo">
+        <img src={logo} alt="logo"/>
+      </div>
+ 
+        <button onClick={startGame}>Começar</button>
+
     </div>
   )
 }
