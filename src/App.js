@@ -43,11 +43,6 @@ function App() {
   }
  
 
-
-
-
-
-
   // função que ficara responsavel para começar o jogo
     // A função start game ia como prop ao componente start screen
     // a partir disso ao clciarmos no botao, somos direcionados ao proximo estagio
@@ -57,8 +52,16 @@ function App() {
       const {word,category} = pickWordAndCategory();
       console.log(word,category)
 
+      // parte responsavel por separar as letras da palavra escolhida
+      let wordLetters = word.split("");
 
+      wordLetters = wordLetters.map((l)=>l.toLowerCase())
 
+      // setar os estados
+      setPickedWord(word);
+      setPickedCategory(category);
+      setLetters(letters);
+     
     setGameStage(stages[1].name);
   };
 
